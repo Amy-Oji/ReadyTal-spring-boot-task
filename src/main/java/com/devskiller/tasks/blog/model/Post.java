@@ -1,10 +1,8 @@
 package com.devskiller.tasks.blog.model;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.time.LocalDateTime;
+import java.util.List;
 
 @Entity
 public class Post {
@@ -19,6 +17,8 @@ public class Post {
 	private String content;
 
 	private LocalDateTime creationDate;
+//	@OneToMany
+//	private List<Comment> comment;
 
 	public String getTitle() {
 		return title;
@@ -48,4 +48,11 @@ public class Post {
 		return id;
 	}
 
+//	public List<Comment> getComment() {
+//		return comment;
+//	}
+//
+//	public void setComment(List<Comment> comment) {
+//		this.comment = comment;
+//	}
 }
