@@ -1,0 +1,46 @@
+*.iws
+*.launch
+.externalToolBuilders/
+.DS_Store
+.idea/
+.nb-gradle/
+.project
+.settings/
+atlassian-ide-plugin.xml
+nbactions.xml
+nbbuild/
+nbdist/
+nbproject/private/
+desktop.ini/
+.classpath
+.factorypath
+.springBeans
+target
+
+
+### *** required entries below ***
+###
+### Please do not add anything below this line, your changes will be overwritten
+###
+.DS.d74cb6fe
+__MACOSX/
+.history/
+### VisualStudioCode ###
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/37b88
+!.vscode/extensions.json
+*.code-workspace
+### VisualStudioCode Patch ###
+# Ignore all local history of files
+.history
+.ionide
+
+
+
+
+###
+###                                                                                                                                                                                                                                  git#228232
+###
