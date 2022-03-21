@@ -38,9 +38,6 @@ public class PostController {
 	@PostMapping("/{postId}/comments")
 	public ResponseEntity<Long> addComment(@PathVariable("postId") Long postId,
 											      @RequestBody NewCommentDto newCommentDto) {
-//		if (postId != newCommentDto.getPostId()) {
-//			throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "post id does not match");
-//		}
 		return new ResponseEntity<>(commentService.addComment(newCommentDto), HttpStatus.CREATED);
 	}
 
